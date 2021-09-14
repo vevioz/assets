@@ -66,7 +66,7 @@ $(document).on("keyup", "#query", function (event) {
     `);},500);}else{$('#player-'+ytid).remove();$(this).text('Play');}
         e.preventDefault();
     }); $(document).on('click', '.url', function (e) {
-        var ytid = $(this).data('frame'); if ($(this).text() == 'Download MP3') { $(this).text('Close'); $(this).parent().parent().prepend('<p><div class="frameme" style="width:100%;" id="fra-' + ytid + '"><iframe style="border:none;width:100%;height:100%;margin:10px;" src="https://tubemp3convert.com/@api/button/mp3/' + ytid + '"></iframe></div></p><br>'); } else { $('#fra-' + ytid).remove(); $('#loader-' + ytid).remove(); $(this).text('Download MP3'); }
+        var ytid = $(this).data('frame'); if ($(this).text() == 'Download MP3') { $(this).text('Close'); $(this).parent().parent().prepend('<p><div class="frameme" style="width:100%;" id="fra-' + ytid + '"><iframe style="border:none;width:100%;height:100%;margin:10px;" src="https://api.vevioz.com/@api/button/mp3/' + ytid + '"></iframe></div></p><br>'); } else { $('#fra-' + ytid).remove(); $('#loader-' + ytid).remove(); $(this).text('Download MP3'); }
         e.preventDefault();
     }); $(document).on('click', '.vidurl', function (e) {
         var ytid = $(this).data('frame'); if ($(this).text() == 'Download MP4') { $(this).text('Close'); $(this).parent().parent().prepend('<p><div style="width:100%;" class="frameme" id="vfra-' + ytid + '"><iframe style="border:none;width:100%;height:100%;margin:10px;" src="https://api.vevioz.com/@api/button/videos/' + ytid + '"></iframe></div></p><br>'); } else { $('#vfra-' + ytid).remove(); $('#loader-' + ytid).remove(); $(this).text('Download MP4'); }
