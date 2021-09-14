@@ -62,7 +62,7 @@ $(document).on("keyup", "#query", function (event) {
         var ytid = $(this).data('play'); console.log(ytid); if ($(this).text() == 'Play') {
             $(this).text('Stop'); $('#player-' + ytid).remove(); $(this).parent().parent().before('<div id="player-' + ytid + '" class="file margin">Loading player <i class="fa fa-cog fa-spin"></i></div>'); setTimeout(function () {
                 $('#player-' + ytid).html(`
-    <div id="player"><iframe src="https://streaming.vevioz.com/video.php?id=`+ytid+`" width="100%" height="315" scrolling="no" frameborder="none" allow="autoplay"></iframe></div>
+    <div id="player"><div id="player"><iframe src="https://www.youtube.com/embed/`+ytid+`" width="100%" height="315" scrolling="no" frameborder="none" allow="autoplay"></iframe></div>
     `);},500);}else{$('#player-'+ytid).remove();$(this).text('Play');}
         e.preventDefault();
     }); $(document).on('click', '.url', function (e) {
