@@ -354,8 +354,7 @@ function vy_webrtc_calls(){
 		self.call_status('answered');
 		
         // Get audio/video stream
- 
-		let constraints = self.media_type == 'audio' ? { audio: true, video:false } : { audio: true, video:{facingMode: "user"}}; 
+		let constraints = self.media_type == 'audio' ? { audio: true, video:false } : { audio: true, video:true }; 
 		await navigator.mediaDevices.getUserMedia(constraints).then(stream => {
 			
  
@@ -615,11 +614,6 @@ function vy_webrtc_calls(){
 				}
 		
 	}
-	this.checkSafari = function() {
-  let seemsChrome = navigator.userAgent.indexOf("Chrome") > -1;
-  let seemsSafari = navigator.userAgent.indexOf("Safari") > -1;
-  return seemsSafari && !seemsChrome;
-},
 	this.connect = function(){
 
  
@@ -682,8 +676,8 @@ function vy_webrtc_calls(){
 		self.set_peer_status('available');
 		
     });
-	self.peer.on('close', function(call,a,b,c) { 
- 
+	self.peer.on('close', function(call) { 
+
 	console.log('Close: declined');
 	});
 	self.peer.on('connection', function(dataConnection) { 
@@ -703,7 +697,7 @@ function vy_webrtc_calls(){
     // error
     self.peer.on('error', function(err) {
       
-const send = jAjax(self.ajax_url,'post',{'cmd':'logerr','err':JSON.stringify(err)});
+ 
 		self.show_err_msg(err.type);
 	
 
@@ -1603,4 +1597,3 @@ const send = jAjax(self.ajax_url,'post',{'cmd':'logerr','err':JSON.stringify(err
 }
 
 
- 
