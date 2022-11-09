@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	// Current Menu
+	// Current Menu Update
   var path = location.pathname.substring(1);
   if (path) {
   	$('ul.channels li a').removeClass("current");
