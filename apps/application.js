@@ -16,6 +16,13 @@ $(document).ready(function(){
 			$(".sidebar").slideToggle();
   	});
   }
+  if($(window).width() < 790){
+  	$(".sidebar").hide();
+  	$(".navbar-toggle").click(function(e){
+			e.preventDefault();
+			$(".sidebar").slideToggle();
+  	});
+  }
   $(document).on('click',"a.ushare",function(e){
     e.preventDefault();
     window.open($(this).attr("href"), '', 'left=50%, top=100, width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1')    
