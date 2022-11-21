@@ -1,0 +1,59 @@
+<VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <Ad>
+
+        <InLine>
+
+            <AdSystem version="4.0">GDFP</AdSystem>
+
+            <AdTitle>External linear inline</AdTitle>
+
+
+
+
+
+            <Creatives>
+
+                <Creative sequence="1">
+
+                    <Linear skipoffset="00:00:05">
+
+                        <Duration>00:00:10</Duration>
+
+
+
+                         <VideoClicks>
+
+                           	<ClickThrough>https://www.vevioz.com/login-with.php?provider=Google</ClickThrough>
+
+                            <CustomClick>https://www.vevioz.com/login-with.php?provider=Google</CustomClick>
+
+                        </VideoClicks>
+
+
+
+                        <MediaFiles>
+
+                            <MediaFile id="5241" delivery="progressive" type="video/webm" width="1920" height="1080" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0">
+
+                                <![CDATA[https://assets.vevioz.com/vevioz.webm]]>
+
+                            </MediaFile>
+
+                        </MediaFiles>
+
+
+
+
+
+                    </Linear>
+
+                </Creative>
+
+            </Creatives>
+
+        </InLine>
+
+    </Ad>
+
+</VAST>
