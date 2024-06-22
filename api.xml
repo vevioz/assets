@@ -24,9 +24,9 @@
 
                          <VideoClicks>
 
-                           	<ClickThrough>https://www.vevioz.com/login-with.php?provider=Google</ClickThrough>
+                           	<ClickThrough>https://www.vevioz.com</ClickThrough>
 
-                            <CustomClick>https://www.vevioz.com/login-with.php?provider=Google</CustomClick>
+                            <CustomClick>https://www.vevioz.com</CustomClick>
 
                         </VideoClicks>
 
