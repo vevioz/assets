@@ -36,7 +36,7 @@
 
                             <MediaFile id="5241" delivery="progressive" type="video/webm" width="1920" height="1080" minBitrate="360" maxBitrate="1080" scalable="1" maintainAspectRatio="1" codec="0">
 
-                                <![CDATA[https://assets.vevioz.com/vevioz.mp4]]>
+                                <![CDATA[https://assets.vevioz.com/vevioz.webm]]>
 
                             </MediaFile>
 
